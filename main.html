@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Progress Bar</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 10;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .progress-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: conic-gradient(#4CAF50 0% 35%, #ddd 35% 100%);
+            transform: rotate(-90deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .progress-circle::before {
+            content: "75%";
+            position: absolute;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .progress-circle-inner {
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-circle">
+        <div class="progress-circle-inner"></div>
+    </div>
+</body>
+</html>
+
+
