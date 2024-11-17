@@ -1,0 +1,18 @@
+.container {
+  display: flex; 
+  align-items: center;
+  gap: 20px; 
+}
+
+img{
+  width: 200px; /* Rasmingizning kengligini o'zgartiring */
+  height: 200px; /* Rasmingizning balandligini o'zgartiring */
+  border-radius: 50%; /* Dumaloq shaklga keltirish */
+  object-fit: cover;
+}
+
+span {
+  color: gold; /* Yulduzchalar uchun sariq rang */
+}
+ 
+   
